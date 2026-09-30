@@ -1,0 +1,1382 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260930-05-8966983","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>As Aventuras de Mike Trailer</title>
+
+  <!-- Google Fonts: Alfa Slab One -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;display=swap">
+  
+  <!-- Basecoat CSS & System Shell -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basecoat-css@1.0.2/dist/basecoat.cdn.min.css">
+  <style>
+/* Skip artifact shell — fixed styles served beside every artifact.
+   Complements basecoat; artifacts override --accent for their own identity. */
+:root {
+  color-scheme: light dark;
+  --accent: #2563eb;
+  --accent-contrast: #ffffff;
+  --accent-text: color-mix(in srgb, var(--accent) 72%, #000);
+  --bg: #f8f9fb;
+  --surface: #ffffff;
+  --text: #14171f;
+  --text-muted: #5b6472;
+  --border: rgba(20, 23, 31, 0.10);
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(20, 23, 31, 0.08);
+  --space: 16px;
+}
+/* Theme resolution. Without data-theme the viewer's system preference decides,
+   as it always did. With it, the artifact's own choice wins in BOTH directions:
+   a page that hardcodes one palette must not be handed the opposite set of
+   tokens by the machine it happens to be opened on. The dark values appear
+   twice because a media query cannot be folded into a selector list.
+   The attribute sits inside :where() so these blocks keep the specificity of a
+   bare :root — the page's own <style> is linked after this file and must go on
+   overriding any token it wants, exactly as it could before. */
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    --accent-text: color-mix(in srgb, var(--accent) 78%, #fff);
+    --bg: #101318;
+    --surface: #181c23;
+    --text: #eef1f6;
+    --text-muted: #9aa4b2;
+    --border: rgba(238, 241, 246, 0.12);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+}
+:root:where([data-theme="dark"]) {
+  color-scheme: dark;
+  --accent-text: color-mix(in srgb, var(--accent) 78%, #fff);
+  --bg: #101318;
+  --surface: #181c23;
+  --text: #eef1f6;
+  --text-muted: #9aa4b2;
+  --border: rgba(238, 241, 246, 0.12);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+:root:where([data-theme="light"]) { color-scheme: light; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+
+.shell-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.shell-section { padding: calc(var(--space) * 2) 0; }
+.shell-grid { display: grid; gap: var(--space); grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.shell-toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: var(--space); }
+.shell-footer { padding: 24px 0 40px; color: var(--text-muted); font-size: 13px; }
+
+.shell-hero { padding: calc(var(--space) * 3) 0 calc(var(--space) * 2); }
+.shell-hero h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.15; margin: 0 0 10px; text-wrap: balance; }
+.shell-hero p { color: var(--text-muted); max-width: 60ch; margin: 0; }
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space);
+}
+
+.kpi { display: flex; flex-direction: column; gap: 4px; }
+.kpi .kpi-value { font-size: 28px; font-weight: 650; line-height: 1.1; }
+.kpi .kpi-label { font-size: 13px; color: var(--text-muted); }
+.kpi .kpi-delta { font-size: 12.5px; font-weight: 600; }
+.kpi .kpi-delta.up { color: #0a8f3c; }
+.kpi .kpi-delta.down { color: #cf3131; }
+
+table.shell-table { border-collapse: collapse; width: 100%; font-size: 14px; }
+table.shell-table th {
+  text-align: left; font-size: 11.5px; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--text-muted); font-weight: 600;
+}
+table.shell-table th, table.shell-table td { padding: 9px 12px 9px 0; border-bottom: 1px solid var(--border); }
+table.shell-table td.num, table.shell-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.shell-table tbody tr:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+
+.chart-box { width: 100%; min-height: 220px; }
+.chart-box svg { width: 100%; height: auto; display: block; }
+
+.muted { color: var(--text-muted); }
+.accent { color: var(--accent-text); }
+.shell-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent-text);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .shell-fade { animation: shell-fade 400ms ease both; }
+  @keyframes shell-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+}
+
+</style>
+  
+
+  <style>
+    :root {
+      --bg: #101B3D;
+      --surface: #172554;
+      --accent: #FFD43B;
+      --accent-contrast: #101B3D;
+      --accent-text: #FFD43B;
+      --comic-yellow: #FFD43B;
+      --comic-coral: #F2644C;
+      --comic-cyan: #14B8D4;
+      --comic-border: #070B19;
+      --text: #F8FAFC;
+      --text-muted: #CBD5E1;
+      --font-display: 'Alfa Slab One', Impact, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image: radial-gradient(rgba(20, 184, 212, 0.12) 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    /* Comic utilities & tags */
+    .font-comic {
+      font-family: var(--font-display);
+      letter-spacing: 0.5px;
+      line-height: 1.15;
+    }
+
+    .comic-box {
+      background: var(--surface);
+      border: 3.5px solid var(--comic-border);
+      box-shadow: 6px 6px 0px var(--comic-border);
+      border-radius: 12px;
+      position: relative;
+    }
+
+    .comic-box-yellow {
+      background: var(--comic-yellow);
+      color: #101B3D;
+      border: 3.5px solid var(--comic-border);
+      box-shadow: 6px 6px 0px var(--comic-border);
+    }
+
+    .comic-tag {
+      display: inline-block;
+      font-family: var(--font-display);
+      padding: 4px 12px;
+      border-radius: 8px;
+      border: 2px solid var(--comic-border);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      box-shadow: 3px 3px 0px var(--comic-border);
+    }
+
+    .tag-yellow { background: var(--comic-yellow); color: #101B3D; }
+    .tag-coral { background: var(--comic-coral); color: #FFFFFF; }
+    .tag-cyan { background: var(--comic-cyan); color: #101B3D; }
+
+    /* Onomatopoeias */
+    .burst-bubble {
+      display: inline-block;
+      position: absolute;
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      padding: 6px 14px;
+      border: 3px solid #000;
+      box-shadow: 4px 4px 0px #000;
+      z-index: 5;
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+      user-select: none;
+      animation: floatBurst 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatBurst {
+      0% { transform: scale(1) rotate(var(--rot, -4deg)); }
+      100% { transform: scale(1.05) rotate(calc(var(--rot, -4deg) + 3deg)); }
+    }
+
+    /* Hero section */
+    .hero-container {
+      position: relative;
+      padding: 3rem 1.25rem 2.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--comic-coral);
+      color: #FFF;
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      padding: 6px 16px;
+      border-radius: 999px;
+      border: 2px solid var(--comic-border);
+      margin-bottom: 1rem;
+      box-shadow: 3px 3px 0 var(--comic-border);
+    }
+
+    .hero-title {
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      color: var(--comic-yellow);
+      text-shadow: 4px 4px 0px var(--comic-border), 6px 6px 0px var(--comic-coral);
+      margin: 0 0 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      color: var(--comic-cyan);
+      margin: 0 auto 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Hero Cover Card */
+    .cover-card-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+      perspective: 1000px;
+    }
+
+    .cover-card {
+      width: 280px;
+      max-width: 85vw;
+      border: 7px solid var(--comic-yellow);
+      border-radius: 16px;
+      background: #0f172a;
+      box-shadow: 10px 10px 0px var(--comic-border), 0 16px 30px rgba(0,0,0,0.5);
+      transform: rotate(-3deg);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      overflow: hidden;
+      cursor: zoom-in;
+      display: block;
+      position: relative;
+    }
+
+    .cover-card:hover {
+      transform: rotate(0deg) scale(1.02);
+      box-shadow: 12px 12px 0px var(--comic-border), 0 20px 35px rgba(0,0,0,0.6);
+    }
+
+    .cover-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* General Layout */
+    .page-section {
+      max-width: 1080px;
+      margin: 3.5rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      color: var(--comic-yellow);
+      text-shadow: 3px 3px 0 var(--comic-border);
+      margin: 0 0 0.5rem;
+      display: inline-block;
+      padding: 4px 16px;
+      background: rgba(16, 27, 61, 0.8);
+      border: 3px solid var(--comic-border);
+      border-radius: 8px;
+      box-shadow: 4px 4px 0 var(--comic-border);
+    }
+
+    /* Intro section */
+    .intro-banner {
+      background: var(--comic-yellow);
+      color: #101B3D;
+      border: 4px solid var(--comic-border);
+      box-shadow: 8px 8px 0 var(--comic-border);
+      border-radius: 14px;
+      padding: 1.75rem 2rem;
+      text-align: center;
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      font-weight: 700;
+      position: relative;
+    }
+
+    /* 2x2 Crew Grid */
+    .crew-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+    }
+
+    @media (max-width: 768px) {
+      .crew-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .crew-card {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      text-align: center;
+      align-items: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .crew-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 8px 10px 0 var(--comic-border);
+    }
+
+    .img-click-trigger {
+      width: 100%;
+      height: 280px;
+      background: #0f172a;
+      border: 3px solid var(--comic-border);
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: zoom-in;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .img-click-trigger img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.25s ease;
+      padding: 8px;
+    }
+
+    .img-click-trigger:hover img {
+      transform: scale(1.05);
+    }
+
+    .zoom-hint {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(16, 27, 61, 0.85);
+      border: 1.5px solid var(--comic-yellow);
+      color: var(--comic-yellow);
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 600;
+      pointer-events: none;
+    }
+
+    .crew-name {
+      font-size: 1.75rem;
+      color: var(--comic-yellow);
+      margin: 1.15rem 0 0.5rem;
+      text-shadow: 2px 2px 0 var(--comic-border);
+    }
+
+    .crew-desc {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin: 0;
+      line-height: 1.45;
+    }
+
+    .crew-badge-capivara {
+      margin-top: 0.85rem;
+      background: var(--comic-coral);
+      color: #FFFFFF;
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 2px solid var(--comic-border);
+      box-shadow: 3px 3px 0 var(--comic-border);
+      display: inline-block;
+    }
+
+    /* CTA hidden characters button */
+    .btn-extra-crew {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: var(--comic-yellow);
+      color: #101B3D;
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+      border: 3.5px solid var(--comic-border);
+      box-shadow: 6px 6px 0px var(--comic-border);
+      border-radius: 12px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 440px;
+    }
+
+    .btn-extra-crew:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 8px 8px 0px var(--comic-border);
+      background: #ffe066;
+    }
+
+    .btn-extra-crew:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px var(--comic-border);
+    }
+
+    /* Modal / Hidden Page Overlay */
+    .hidden-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: #101B3D;
+      z-index: 9999;
+      overflow-y: auto;
+      display: none;
+      padding: 1rem;
+    }
+
+    .hidden-overlay.active {
+      display: block;
+    }
+
+    .overlay-sticky-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #101B3D;
+      padding: 0.75rem 0;
+      display: flex;
+      justify-content: flex-end;
+      border-bottom: 2px solid rgba(255, 212, 59, 0.2);
+    }
+
+    .overlay-close-btn {
+      background: var(--comic-coral);
+      color: #FFF;
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 3px solid var(--comic-border);
+      box-shadow: 3px 3px 0 var(--comic-border);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.15s ease;
+    }
+
+    .overlay-close-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .overlay-content {
+      max-width: 1000px;
+      margin: 1rem auto 3rem;
+      text-align: center;
+    }
+
+    .extra-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    @media (max-width: 900px) {
+      .extra-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .extra-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .reserved-card {
+      border: 3px dashed var(--comic-yellow);
+      background: rgba(23, 37, 84, 0.6);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 240px;
+    }
+
+    .reserved-icon {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 16, 36, 0.92);
+      z-index: 10000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-wrapper {
+      position: relative;
+      display: inline-block;
+      max-width: 95vw;
+      max-height: 90vh;
+    }
+
+    .lightbox-img {
+      max-width: 95vw;
+      max-height: 90vh;
+      object-fit: contain;
+      border: 4px solid var(--comic-yellow);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+      display: block;
+      background: #0b1124;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: -18px;
+      right: -18px;
+      background: var(--comic-coral);
+      color: #FFF;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 3px solid var(--comic-border);
+      box-shadow: 2px 2px 0 var(--comic-border);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+    }
+
+    /* Curiosidades & Easter Eggs Grids */
+    .cards-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 860px) {
+      .cards-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 580px) {
+      .cards-grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .cards-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 960px) {
+      .cards-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 580px) {
+      .cards-grid-4 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .feature-card {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      border-left: 6px solid var(--comic-cyan);
+    }
+
+    .feature-card.coral-accent {
+      border-left-color: var(--comic-coral);
+    }
+
+    .feature-card.yellow-accent {
+      border-left-color: var(--comic-yellow);
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      color: var(--comic-yellow);
+      margin: 0 0 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .card-body {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.45;
+    }
+
+    /* Seção História Maluca (Comic Panel) */
+    .comic-panel-story {
+      background: #172554;
+      border: 4px solid var(--comic-border);
+      box-shadow: 8px 8px 0 var(--comic-border);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      position: relative;
+    }
+
+    .speech-bubble {
+      background: #FFFFFF;
+      color: #101B3D;
+      border: 3.5px solid var(--comic-border);
+      border-radius: 16px;
+      padding: 1.75rem 2rem;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      font-weight: 500;
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.35);
+      position: relative;
+    }
+
+    .speech-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -18px;
+      left: 48px;
+      border-width: 18px 18px 0;
+      border-style: solid;
+      border-color: #FFFFFF transparent;
+      display: block;
+      width: 0;
+    }
+
+    .speech-bubble::before {
+      content: '';
+      position: absolute;
+      bottom: -23px;
+      left: 46px;
+      border-width: 21px 20px 0;
+      border-style: solid;
+      border-color: var(--comic-border) transparent;
+      display: block;
+      width: 0;
+    }
+
+    /* Ficha do Livro */
+    .book-specs-card {
+      background: #152248;
+      border: 3px solid var(--comic-cyan);
+      box-shadow: 6px 6px 0 var(--comic-border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .spec-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .spec-item {
+      display: flex;
+      align-items: center;
+      padding: 0.75rem 0;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+      font-size: 1.05rem;
+    }
+
+    .spec-item:last-child {
+      border-bottom: none;
+    }
+
+    .spec-label {
+      color: var(--comic-yellow);
+      font-family: var(--font-display);
+      width: 140px;
+      font-size: 0.95rem;
+    }
+
+    .spec-value {
+      color: #FFF;
+      font-weight: 600;
+    }
+
+    /* CTA Final */
+    .cta-banner {
+      background: var(--comic-coral);
+      color: #FFF;
+      border: 4px solid var(--comic-border);
+      box-shadow: 8px 8px 0 var(--comic-border);
+      border-radius: 16px;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .cta-title {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin: 0 0 0.5rem;
+      text-shadow: 3px 3px 0 var(--comic-border);
+      color: var(--comic-yellow);
+    }
+
+    .cta-text {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 1.25rem;
+    }
+
+    .cta-hashtag {
+      display: inline-block;
+      background: var(--comic-yellow);
+      color: #101B3D;
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+      padding: 10px 24px;
+      border-radius: 12px;
+      border: 3.5px solid var(--comic-border);
+      box-shadow: 5px 5px 0 var(--comic-border);
+      letter-spacing: 0.5px;
+    }
+
+    .footer-note {
+      text-align: center;
+      padding: 2.5rem 1rem 3rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Access focus outline */
+    button:focus-visible, a:focus-visible {
+      outline: 3px solid var(--comic-yellow);
+      outline-offset: 3px;
+    }
+  </style>
+<script src="/_sdk/ddcab3e45959c817.resizing_sdk.js" integrity="sha512-VAviUKfZVzugWBSeULYjSljTX+nb84wc6Zzbx5GQaQgh6X2ISSjXi8eIiCDGdwDh10esJMY0+QFQgUy9NcrTlQ=="></script><script src="/_sdk/6c2ecc939521f244.data_sdk.js" integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script></head>
+<body data-html-import-id="html-import-0" data-template-id="__page-root" style="background: rgb(16, 27, 61);">
+
+  <!-- HERO SECTION -->
+  <header class="hero-container" data-html-import-id="html-import-1">
+    <!-- Comic sound bursts -->
+    <div class="burst-bubble tag-yellow canva-container" style="top: 15px; left: 6%; --rot: -8deg; background: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 18px;" data-html-import-id="html-import-2" data-template-id="div-0">BUUM!</div>
+    <div class="burst-bubble tag-coral canva-container" style="top: 25px; right: 8%; --rot: 7deg; background: rgb(242, 100, 76); font-family: &quot;Alfa Slab One&quot;; font-size: 18px;" data-html-import-id="html-import-3" data-template-id="div-1">HAHA!</div>
+
+    <div class="hero-badge canva-container" data-html-import-id="html-import-4" data-template-id="div-2" style="background: rgb(242, 100, 76); color: rgb(255, 255, 255); font-family: &quot;Alfa Slab One&quot;; font-size: 15px;">TRAILER OFICIAL EM QUADRINHOS</div>
+    <h1 class="hero-title font-comic canva-text" data-html-import-id="html-import-5" data-template-id="h1-3" style="font-family: &quot;Alfa Slab One&quot;; font-size: 65px;">AS AVENTURAS DE MIKE</h1>
+    <div class="hero-subtitle canva-container" data-html-import-id="html-import-6" data-template-id="div-4" style="color: rgb(20, 184, 212); font-weight: 700; font-size: 29px;">A confusão começa agora</div>
+
+    <!-- Capa do Livro Real -->
+    <div class="cover-card-wrapper" data-html-import-id="html-import-7">
+      <div class="cover-card js-lightbox-trigger canva-container" role="button" tabindex="0" aria-label="Ampliar capa do livro As Aventuras de Mike" data-html-import-id="html-import-8" data-template-id="div-5" style="background: rgb(15, 23, 42);">
+        <img src= "capalivro.jpg">
+        <span class="zoom-hint canva-text" data-html-import-id="html-import-10" data-template-id="span-7" style="background: rgba(16, 27, 61, 0.85); color: rgb(255, 212, 59); font-weight: 600; font-size: 12px;">?? Clique para ampliar</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. SEÇÃO DA TELA DO YOUTUBE PARA AS PÁGINAS -->
+  <section class="page-section" data-html-import-id="html-import-11">
+    <div class="intro-banner canva-container" data-html-import-id="html-import-12" data-template-id="div-8" style="background: rgb(255, 212, 59); color: rgb(16, 27, 61); font-weight: 700; font-size: 22px;">
+      <div class="comic-tag tag-coral canva-container" style="position: absolute; top: -14px; left: 24px; background: rgb(242, 100, 76); color: rgb(255, 255, 255); font-family: &quot;Alfa Slab One&quot;; font-size: 14px;" data-html-import-id="html-import-13" data-template-id="div-9">SUCESSO</div><canva-inline-text data-template-id="canva-inline-text-10" class="canva-text" style="color: rgb(16, 27, 61); font-weight: 700; font-size: 22px;">Literatura infantojuvenil baseada no canal do YouTube do casal Gabriel Dearo e Manu Digilio, agora em páginas cheias de humor.</canva-inline-text></div>
+  </section>
+
+  <!-- 3. SEÇÃO CONHEÇA A TURMA (GRID 2x2) -->
+  <section class="page-section" data-html-import-id="html-import-14">
+    <div class="section-header" data-html-import-id="html-import-15">
+      <h2 class="section-title font-comic canva-text" data-html-import-id="html-import-16" data-template-id="h2-11" style="background: rgba(16, 27, 61, 0.8); font-family: &quot;Alfa Slab One&quot;; font-size: 38px;">CONHEÇA A TURMA</h2>
+      <p style="color: rgb(20, 184, 212); margin: 0.5rem 0px 0px; font-weight: 600;" data-html-import-id="html-import-17" data-template-id="p-12" class="canva-text">Clique em qualquer imagem para ampliar em tela cheia!</p>
+    </div>
+
+    <div class="crew-grid" data-html-import-id="html-import-18">
+      <!-- Card a: Mike -->
+      <article class="comic-box crew-card" data-html-import-id="html-import-19" data-template-id="article-13" style="background: rgb(23, 37, 84);">
+        <div class="img-click-trigger js-lightbox-trigger canva-container" role="button" tabindex="0" aria-label="Ampliar imagem do Mike" data-html-import-id="html-import-20" data-template-id="div-14" style="background: rgb(15, 23, 42);">
+          <img scr= "mike.jfif">
+          <span class="zoom-hint canva-text" data-html-import-id="html-import-22" data-template-id="span-16" style="background: rgba(16, 27, 61, 0.85); color: rgb(255, 212, 59); font-weight: 600; font-size: 12px;">?? Clique para ampliar</span>
+        </div>
+        <h3 class="crew-name font-comic canva-text" data-html-import-id="html-import-23" data-template-id="h3-17" style="font-family: &quot;Alfa Slab One&quot;; font-size: 28px;">MIKE</h3>
+        <p class="crew-desc canva-text" data-html-import-id="html-import-24" data-template-id="p-18" style="color: rgb(203, 213, 225); font-size: 16px;">O protagonista, alto em piadas ruins e em confusão.</p>
+      </article>
+
+      <!-- Card b: Nando -->
+      <article class="comic-box crew-card" data-html-import-id="html-import-25" data-template-id="article-19" style="background: rgb(23, 37, 84);">
+        <div class="img-click-trigger js-lightbox-trigger canva-container" role="button" tabindex="0" aria-label="Ampliar imagem de Nando" data-html-import-id="html-import-26" data-template-id="div-20" style="background: rgb(15, 23, 42);">
+          <img src= "nando.jfif">
+          <span class="zoom-hint canva-text" data-html-import-id="html-import-28" data-template-id="span-22" style="background: rgba(16, 27, 61, 0.85); color: rgb(255, 212, 59); font-weight: 600; font-size: 12px;">?? Clique para ampliar</span>
+        </div>
+        <h3 class="crew-name font-comic canva-text" data-html-import-id="html-import-29" data-template-id="h3-23" style="font-family: &quot;Alfa Slab One&quot;; font-size: 28px;">NANDO</h3>
+        <p class="crew-desc canva-text" data-html-import-id="html-import-30" data-template-id="p-24" style="color: rgb(203, 213, 225); font-size: 16px;">O melhor amigo do Mike, alto em confusão, sempre pronto para aprontar junto.</p>
+      </article>
+
+      <!-- Card c: Robson -->
+      <article class="comic-box crew-card" data-html-import-id="html-import-31" data-template-id="article-25" style="background: rgb(23, 37, 84);">
+        <div class="img-click-trigger js-lightbox-trigger canva-container" role="button" tabindex="0" aria-label="Ampliar imagem de Robson" data-html-import-id="html-import-32" data-template-id="div-26" style="background: rgb(15, 23, 42);">
+          <img scr= "robson.jfif">
+          <span class="zoom-hint canva-text" data-html-import-id="html-import-34" data-template-id="span-28" style="background: rgba(16, 27, 61, 0.85); color: rgb(255, 212, 59); font-weight: 600; font-size: 12px;">?? Clique para ampliar</span>
+        </div>
+        <h3 class="crew-name font-comic canva-text" data-html-import-id="html-import-35" data-template-id="h3-29" style="font-family: &quot;Alfa Slab One&quot;; font-size: 28px;">ROBSON</h3>
+        <p class="crew-desc canva-text" data-html-import-id="html-import-36" data-template-id="p-30" style="color: rgb(203, 213, 225); font-size: 16px;">A capivara da turma, alto em preguiça, sempre tranquilo e divertido.</p>
+        <div class="crew-badge-capivara canva-container" data-html-import-id="html-import-37" data-template-id="div-31" style="background: rgb(242, 100, 76); color: rgb(255, 255, 255); font-family: &quot;Alfa Slab One&quot;; font-size: 13px;">ROBSON É CAPIVARA! NÃO É CACHORRO</div>
+      </article>
+
+      <!-- Card d: Priminha Irritante -->
+      <article class="comic-box crew-card" data-html-import-id="html-import-38" data-template-id="article-32" style="background: rgb(23, 37, 84);">
+        <div class="img-click-trigger js-lightbox-trigger canva-container" role="button" tabindex="0" aria-label="Ampliar imagem da Priminha Irritante" data-html-import-id="html-import-39" data-template-id="div-33" style="background: rgb(15, 23, 42);">
+          <img scr= "priminhairritante.jfif">
+          <span class="zoom-hint canva-text" data-html-import-id="html-import-41" data-template-id="span-35" style="background: rgba(16, 27, 61, 0.85); color: rgb(255, 212, 59); font-weight: 600; font-size: 12px;">?? Clique para ampliar</span>
+        </div>
+        <h3 class="crew-name font-comic canva-text" data-html-import-id="html-import-42" data-template-id="h3-36" style="font-family: &quot;Alfa Slab One&quot;; font-size: 28px;">PRIMINHA IRRITANTE</h3>
+        <p class="crew-desc canva-text" data-html-import-id="html-import-43" data-template-id="p-37" style="color: rgb(203, 213, 225); font-size: 16px;">A irmã do Mike, alto em irritar, sempre aprontando com a varinha de condão.</p>
+      </article>
+    </div>
+
+    <!-- 4. BOTÃO CONHEÇA OS RESTANTES DOS PERSONAGENS -->
+    <div style="text-align: center;" data-html-import-id="html-import-44">
+      <button class="btn-extra-crew canva-button" id="openExtraOverlay" type="button" data-html-import-id="html-import-45" data-template-id="button-38" style="background: rgb(255, 212, 59); color: rgb(16, 27, 61); font-family: &quot;Alfa Slab One&quot;; font-size: 18px;">? CONHEÇA OS RESTANTES DOS PERSONAGENS</button>
+    </div>
+  </section>
+
+  <!-- PÁGINA ESCONDIDA / OVERLAY -->
+  <div class="hidden-overlay canva-container" id="extraOverlay" role="dialog" aria-modal="true" aria-labelledby="extraOverlayTitle" data-html-import-id="html-import-46" data-template-id="div-39" style="background: rgb(16, 27, 61);">
+    <div class="overlay-sticky-bar canva-container" data-html-import-id="html-import-47" data-template-id="div-40" style="background: rgb(16, 27, 61);">
+      <button class="overlay-close-btn canva-button" id="closeExtraOverlay" aria-label="Fechar janela de personagens" data-html-import-id="html-import-48" data-template-id="button-41" style="background: rgb(242, 100, 76); color: rgb(255, 255, 255); font-family: &quot;Alfa Slab One&quot;; font-size: 21px;">?</button>
+    </div>
+    <div class="overlay-content" id="extraOverlayContent" data-html-import-id="html-import-49">
+      <h2 class="section-title font-comic canva-text" id="extraOverlayTitle" data-html-import-id="html-import-50" data-template-id="h2-42" style="background: rgba(16, 27, 61, 0.8); font-family: &quot;Alfa Slab One&quot;; font-size: 38px;">CONHEÇA OS RESTANTES DOS PERSONAGENS</h2>
+      <p style="font-size: 18px; color: rgb(20, 184, 212); margin: 0.75rem auto 1.5rem; max-width: 650px;" data-html-import-id="html-import-51" data-template-id="p-43" class="canva-text">
+        A turma do Mike é grande, e cada personagem tem a sua história.
+      </p>
+
+      <div class="extra-grid" data-html-import-id="html-import-52">
+        <!-- MAMÃE (com imagem exata 2) -->
+        <article class="comic-box crew-card" style="text-align: center; background: rgb(23, 37, 84);" data-html-import-id="html-import-53" data-template-id="article-44">
+          <div class="img-click-trigger js-lightbox-trigger canva-container" role="button" tabindex="0" aria-label="Ampliar imagem da Mamãe" data-html-import-id="html-import-54" data-template-id="div-45" style="background: rgb(15, 23, 42);">
+            <img scr= "mae.jfif">
+            <span class="zoom-hint canva-text" data-html-import-id="html-import-56" data-template-id="span-47" style="background: rgba(16, 27, 61, 0.85); color: rgb(255, 212, 59); font-weight: 600; font-size: 12px;">?? Clique para ampliar</span>
+          </div>
+          <h3 class="crew-name font-comic canva-text" data-html-import-id="html-import-57" data-template-id="h3-48" style="font-family: &quot;Alfa Slab One&quot;; font-size: 28px;">MAMÃE ??</h3>
+          <p class="crew-desc canva-text" data-html-import-id="html-import-58" data-template-id="p-49" style="color: rgb(203, 213, 225); font-size: 16px;">A mãe do Mike, alto em broncas, sempre por perto para aguentar as confusões da turma.</p>
+        </article>
+
+        <!-- CARD PAI (com imagem real) -->
+        <article class="comic-box crew-card" style="text-align: center; background: rgb(23, 37, 84);" data-html-import-id="html-import-59" data-template-id="article-50">
+          <div class="img-click-trigger js-lightbox-trigger canva-container" role="button" tabindex="0" aria-label="Ampliar imagem do Pai" data-html-import-id="html-import-60" data-template-id="div-51" style="background: rgb(15, 23, 42);">
+            <img scr= "mike/pai.jfif">
+            <span class="zoom-hint canva-text" data-html-import-id="html-import-62" data-template-id="span-53" style="background: rgba(16, 27, 61, 0.85); color: rgb(255, 212, 59); font-weight: 600; font-size: 12px;">?? Clique para ampliar</span>
+          </div>
+          <h3 class="crew-name font-comic canva-text" data-html-import-id="html-import-63" data-template-id="h3-54" style="font-family: &quot;Alfa Slab One&quot;; font-size: 28px;">PAI ??</h3>
+          <p class="crew-desc canva-text" data-html-import-id="html-import-64" data-template-id="p-55" style="color: rgb(203, 213, 225); font-size: 16px;">O pai do Mike, alto em gambiarra, sempre achando um jeito (nem sempre certo) de resolver tudo.</p>
+        </article>
+
+        <!-- CARD O BEBÊ (com imagem real) -->
+        <article class="comic-box crew-card" style="text-align: center; background: rgb(23, 37, 84);" data-html-import-id="html-import-65" data-template-id="article-56">
+          <div class="img-click-trigger js-lightbox-trigger canva-container" role="button" tabindex="0" aria-label="Ampliar imagem d'O Bebê" data-html-import-id="html-import-66" data-template-id="div-57" style="background: rgb(15, 23, 42);">
+            <img scr= "bebe.jfif">
+            <span class="zoom-hint canva-text" data-html-import-id="html-import-68" data-template-id="span-59" style="background: rgba(16, 27, 61, 0.85); color: rgb(255, 212, 59); font-weight: 600; font-size: 12px;">?? Clique para ampliar</span>
+          </div>
+          <h3 class="crew-name font-comic canva-text" data-html-import-id="html-import-69" data-template-id="h3-60" style="font-family: &quot;Alfa Slab One&quot;; font-size: 28px;">O BEBÊ ??</h3>
+          <p class="crew-desc canva-text" data-html-import-id="html-import-70" data-template-id="p-61" style="color: rgb(203, 213, 225); font-size: 16px;">O irmão do Mike, o bebê que chegou e virou a casa de cabeça para baixo.</p>
+        </article>
+
+        <!-- CARD VALENTINA (com imagem real) -->
+        <article class="comic-box crew-card" style="text-align: center; background: rgb(23, 37, 84);" data-html-import-id="html-import-71" data-template-id="article-62">
+          <div class="img-click-trigger js-lightbox-trigger canva-container" role="button" tabindex="0" aria-label="Ampliar imagem da Valentina" data-html-import-id="html-import-72" data-template-id="div-63" style="background: rgb(15, 23, 42);">
+            <img scr= "valentina.jfif">
+            <span class="zoom-hint canva-text" data-html-import-id="html-import-74" data-template-id="span-65" style="background: rgba(16, 27, 61, 0.85); color: rgb(255, 212, 59); font-weight: 600; font-size: 12px;">?? Clique para ampliar</span>
+          </div>
+          <h3 class="crew-name font-comic canva-text" data-html-import-id="html-import-75" data-template-id="h3-66" style="font-family: &quot;Alfa Slab One&quot;; font-size: 28px;">VALENTINA ??</h3>
+          <p class="crew-desc canva-text" data-html-import-id="html-import-76" data-template-id="p-67" style="color: rgb(203, 213, 225); font-size: 16px;">A paixão do Mike, sempre muito inteligente e deixando o Mike todo atrapalhado.</p>
+        </article>
+
+        <!-- CARD JANE (com imagem real) -->
+        <article class="comic-box crew-card" style="text-align: center; background: rgb(23, 37, 84);" data-html-import-id="html-import-77" data-template-id="article-68">
+          <div class="img-click-trigger js-lightbox-trigger canva-container" role="button" tabindex="0" aria-label="Ampliar imagem da Jane" data-html-import-id="html-import-78" data-template-id="div-69" style="background: rgb(15, 23, 42);">
+            <img scr= "jane.jfif">
+            <span class="zoom-hint canva-text" data-html-import-id="html-import-80" data-template-id="span-71" style="background: rgba(16, 27, 61, 0.85); color: rgb(255, 212, 59); font-weight: 600; font-size: 12px;">?? Clique para ampliar</span>
+          </div>
+          <h3 class="crew-name font-comic canva-text" data-html-import-id="html-import-81" data-template-id="h3-72" style="font-family: &quot;Alfa Slab One&quot;; font-size: 28px;">JANE ?</h3>
+          <p class="crew-desc canva-text" data-html-import-id="html-import-82" data-template-id="p-73" style="color: rgb(203, 213, 225); font-size: 16px;">Mais uma da turma, sempre cheia de estilo. Personagem da série As Aventuras de Mike.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal canva-container" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Visualizador de imagem em tela cheia" data-html-import-id="html-import-83" data-template-id="div-74" style="background: rgba(10, 16, 36, 0.92);">
+    <div class="lightbox-wrapper" id="lightboxWrapper" data-html-import-id="html-import-84">
+      <button class="lightbox-close canva-button" id="closeLightbox" aria-label="Fechar visualização" data-html-import-id="html-import-85" data-template-id="button-75" style="background: rgb(242, 100, 76); color: rgb(255, 255, 255); font-family: &quot;Alfa Slab One&quot;; font-size: 19px;">?</button>
+      <img id="lightboxTargetImg" class="lightbox-img canva-image" src="" alt="Imagem ampliada" data-html-import-id="html-import-86" data-template-id="img-76" style="background: rgb(11, 17, 36);">
+    </div>
+  </div>
+
+  <!-- 5. SEÇÃO CURIOSIDADES -->
+  <section class="page-section" data-html-import-id="html-import-87">
+    <div class="section-header" data-html-import-id="html-import-88">
+      <h2 class="section-title font-comic canva-text" data-html-import-id="html-import-89" data-template-id="h2-77" style="background: rgba(16, 27, 61, 0.8); font-family: &quot;Alfa Slab One&quot;; font-size: 38px;">CURIOSIDADES</h2>
+    </div>
+
+    <div class="cards-grid-3" data-html-import-id="html-import-90">
+      <!-- 1 -->
+      <div class="comic-box feature-card yellow-accent canva-container" data-html-import-id="html-import-91" data-template-id="div-78" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-92" data-template-id="div-79" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-93" data-template-id="h3-80" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">MAIS DE 1 MILHÃO DE EXEMPLARES VENDIDOS</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-94" data-template-id="p-81" style="color: rgb(203, 213, 225); font-size: 15px;">A série ultrapassou 1 milhão de exemplares vendidos no Brasil.</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="comic-box feature-card coral-accent canva-container" data-html-import-id="html-import-95" data-template-id="div-82" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-96" data-template-id="div-83" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-97" data-template-id="h3-84" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">A CAPIVARA MAIS FAMOSA DO BRASIL</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-98" data-template-id="p-85" style="color: rgb(203, 213, 225); font-size: 15px;">Robson é a capivara de estimação do Mike e o 4º livro conta a origem dela.</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="comic-box feature-card canva-container" data-html-import-id="html-import-99" data-template-id="div-86" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-100" data-template-id="div-87" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-101" data-template-id="h3-88" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">EDIÇÃO DE COLECIONADOR ESPECIAL E COLORIDA</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-102" data-template-id="p-89" style="color: rgb(203, 213, 225); font-size: 15px;">Capa dura, 144 páginas, 16 tirinhas, lançada em 1º de novembro de 2021.</p>
+      </div>
+
+      <!-- 4 -->
+      <div class="comic-box feature-card yellow-accent canva-container" data-html-import-id="html-import-103" data-template-id="div-90" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-104" data-template-id="div-91" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-105" data-template-id="h3-92" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">HISTÓRIAS REAIS DO CASAL</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-106" data-template-id="p-93" style="color: rgb(203, 213, 225); font-size: 15px;">A saga é inspirada nas histórias reais dos youtubers Gabriel Dearo e Manu Digilio.</p>
+      </div>
+
+      <!-- 5 -->
+      <div class="comic-box feature-card coral-accent canva-container" data-html-import-id="html-import-107" data-template-id="div-94" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-108" data-template-id="div-95" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-109" data-template-id="h3-96" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">SÉRIE COMPLETA</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-110" data-template-id="p-97" style="color: rgb(203, 213, 225); font-size: 15px;">Existem os volumes 2 ("o bebê chegou!"), 3 ("mudando de casa") e 4 ("a origem de Robson"), e um livro interativo.</p>
+      </div>
+
+      <!-- 6 -->
+      <div class="comic-box feature-card canva-container" data-html-import-id="html-import-111" data-template-id="div-98" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-112" data-template-id="div-99" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-113" data-template-id="h3-100" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">O MIKE É UM GAROTO COMUM</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-114" data-template-id="p-101" style="color: rgb(203, 213, 225); font-size: 15px;">Ao contrário do garoto popular da escola, ele é um menino comum e atrapalhado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SEÇÃO EASTER EGGS E REFERÊNCIAS -->
+  <section class="page-section" data-html-import-id="html-import-115">
+    <div class="section-header" data-html-import-id="html-import-116">
+      <h2 class="section-title font-comic canva-text" data-html-import-id="html-import-117" data-template-id="h2-102" style="background: rgba(16, 27, 61, 0.8); font-family: &quot;Alfa Slab One&quot;; font-size: 38px;">EASTER EGGS E REFERÊNCIAS</h2>
+    </div>
+
+    <div class="cards-grid-4" data-html-import-id="html-import-118">
+      <!-- 1 -->
+      <div class="comic-box feature-card yellow-accent canva-container" data-html-import-id="html-import-119" data-template-id="div-103" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-120" data-template-id="div-104" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-121" data-template-id="h3-105" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">A ORIGEM DE ROBSON</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-122" data-template-id="p-106" style="color: rgb(203, 213, 225); font-size: 15px;">O 4º livro conta como a capivara foi parar na casa do Mike.</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="comic-box feature-card coral-accent canva-container" data-html-import-id="html-import-123" data-template-id="div-107" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-124" data-template-id="div-108" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-125" data-template-id="h3-109" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">A PRIMINHA IRRITANTE</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-126" data-template-id="p-110" style="color: rgb(203, 213, 225); font-size: 15px;">Ela se chama literalmente Priminha Irritante e sempre apronta com a varinha de condão.</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="comic-box feature-card canva-container" data-html-import-id="html-import-127" data-template-id="div-111" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-128" data-template-id="div-112" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-129" data-template-id="h3-113" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">NANDO, O DESASTRADO</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-130" data-template-id="p-114" style="color: rgb(203, 213, 225); font-size: 15px;">O melhor amigo é desastrado e isso gera as confusões mais engraçadas.</p>
+      </div>
+
+      <!-- 4 -->
+      <div class="comic-box feature-card yellow-accent canva-container" data-html-import-id="html-import-131" data-template-id="div-115" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-132" data-template-id="div-116" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-133" data-template-id="h3-117" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">HISTÓRIAS REAIS DO CASAL</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-134" data-template-id="p-118" style="color: rgb(203, 213, 225); font-size: 15px;">Muitas confusões nasceram de situações vividas por Gabriel e Manu.</p>
+      </div>
+
+      <!-- 5 -->
+      <div class="comic-box feature-card coral-accent canva-container" data-html-import-id="html-import-135" data-template-id="div-119" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-136" data-template-id="div-120" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-137" data-template-id="h3-121" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">NADA É NORMAL NA VIDA DO MIKE</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-138" data-template-id="p-122" style="color: rgb(203, 213, 225); font-size: 15px;">Essa é a frase de efeito da série, nem o animal de estimação é normal.</p>
+      </div>
+
+      <!-- 6 -->
+      <div class="comic-box feature-card canva-container" data-html-import-id="html-import-139" data-template-id="div-123" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-140" data-template-id="div-124" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-141" data-template-id="h3-125" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">O MIKE NÃO É O POPULAR</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-142" data-template-id="p-126" style="color: rgb(203, 213, 225); font-size: 15px;">A piada é que ele não tem nada de descolado.</p>
+      </div>
+
+      <!-- 7 -->
+      <div class="comic-box feature-card yellow-accent canva-container" data-html-import-id="html-import-143" data-template-id="div-127" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-144" data-template-id="div-128" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-145" data-template-id="h3-129" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">DO YOUTUBE PARA O PAPEL</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-146" data-template-id="p-130" style="color: rgb(203, 213, 225); font-size: 15px;">A franquia nasceu no canal do YouTube e migrou para os livros.</p>
+      </div>
+
+      <!-- 8 -->
+      <div class="comic-box feature-card coral-accent canva-container" data-html-import-id="html-import-147" data-template-id="div-131" style="background: rgb(23, 37, 84);">
+        <div class="card-icon canva-container" data-html-import-id="html-import-148" data-template-id="div-132" style="color: rgb(248, 250, 252); font-size: 32px;">??</div>
+        <h3 class="card-title font-comic canva-text" data-html-import-id="html-import-149" data-template-id="h3-133" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 16px;">MAIS DE 1 MILHÃO DE EXEMPLARES</h3>
+        <p class="card-body canva-text" data-html-import-id="html-import-150" data-template-id="p-134" style="color: rgb(203, 213, 225); font-size: 15px;">Marco da série no Brasil.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. SEÇÃO UMA HISTÓRIA MALUCA -->
+  <section class="page-section" data-html-import-id="html-import-151">
+    <div class="section-header" data-html-import-id="html-import-152">
+      <h2 class="section-title font-comic canva-text" data-html-import-id="html-import-153" data-template-id="h2-135" style="background: rgba(16, 27, 61, 0.8); font-family: &quot;Alfa Slab One&quot;; font-size: 38px;">UMA HISTÓRIA MALUCA</h2>
+    </div>
+
+    <div class="comic-panel-story canva-container" data-html-import-id="html-import-154" data-template-id="div-136" style="background: rgb(23, 37, 84);">
+      <div class="burst-bubble tag-yellow canva-container" style="top: -18px; right: 25px; --rot: 5deg; background: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 18px;" data-html-import-id="html-import-155" data-template-id="div-137">KABOOM!</div>
+      <div class="burst-bubble tag-cyan canva-container" style="bottom: -15px; left: 30px; --rot: -6deg; background: rgb(20, 184, 212); font-family: &quot;Alfa Slab One&quot;; font-size: 18px;" data-html-import-id="html-import-156" data-template-id="div-138">HAHAHA!</div>
+      
+      <div class="speech-bubble canva-container" data-html-import-id="html-import-157" data-template-id="div-139" style="background: rgb(255, 255, 255); color: rgb(16, 27, 61); font-weight: 500; font-size: 18px;">
+        Num dia que parecia normal, Mike acordou e descobriu que a Priminha Irritante tinha trocado o café da manhã por um pote de purpurina. Nando, o desastrado, tentou ajudar e derrubou a geladeira inteira. Robson, a capivara mais tranquila do mundo, apenas observou, mastigando uma cenoura, enquanto a casa virava um arco-íris de confusão. No fim, a Priminha Irritante apontou a varinha de condão e disse: 'Tudo isso foi só o começo!' E Mike, coberto de purpurina, só conseguiu rir.
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FICHA DO LIVRO -->
+  <section class="page-section" data-html-import-id="html-import-158">
+    <div class="book-specs-card canva-container" data-html-import-id="html-import-159" data-template-id="div-140" style="background: rgb(21, 34, 72);">
+      <div class="comic-tag tag-cyan canva-container" style="margin-bottom: 0.75rem; background: rgb(20, 184, 212); color: rgb(16, 27, 61); font-family: &quot;Alfa Slab One&quot;; font-size: 14px;" data-html-import-id="html-import-160" data-template-id="div-141">FICHA TÉCNICA</div>
+      <ul class="spec-list" data-html-import-id="html-import-161">
+        <li class="spec-item canva-text" data-html-import-id="html-import-162" data-template-id="li-142" style="color: rgb(248, 250, 252); font-size: 17px;">
+          <span class="spec-label canva-text" data-html-import-id="html-import-163" data-template-id="span-143" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 15px;">Autores:</span>
+          <span class="spec-value canva-text" data-html-import-id="html-import-164" data-template-id="span-144" style="color: rgb(255, 255, 255); font-weight: 600;">Gabriel Dearo &amp; Manu Digilio</span>
+        </li>
+        <li class="spec-item canva-text" data-html-import-id="html-import-165" data-template-id="li-145" style="color: rgb(248, 250, 252); font-size: 17px;">
+          <span class="spec-label canva-text" data-html-import-id="html-import-166" data-template-id="span-146" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 15px;">Ilustrações:</span>
+          <span class="spec-value canva-text" data-html-import-id="html-import-167" data-template-id="span-147" style="color: rgb(255, 255, 255); font-weight: 600;">Mack</span>
+        </li>
+        <li class="spec-item canva-text" data-html-import-id="html-import-168" data-template-id="li-148" style="color: rgb(248, 250, 252); font-size: 17px;">
+          <span class="spec-label canva-text" data-html-import-id="html-import-169" data-template-id="span-149" style="color: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 15px;">Editora:</span>
+          <span class="spec-value canva-text" data-html-import-id="html-import-170" data-template-id="span-150" style="color: rgb(255, 255, 255); font-weight: 600;">Planeta</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 9. CTA FINAL -->
+  <section class="page-section" data-html-import-id="html-import-171">
+    <div class="cta-banner canva-container" data-html-import-id="html-import-172" data-template-id="div-151" style="background: rgb(242, 100, 76); color: rgb(255, 255, 255);">
+      <div class="burst-bubble tag-yellow canva-container" style="top: -16px; left: 20px; --rot: -8deg; background: rgb(255, 212, 59); font-family: &quot;Alfa Slab One&quot;; font-size: 18px;" data-html-import-id="html-import-173" data-template-id="div-152">BOMBA!</div>
+      <h2 class="cta-title font-comic canva-text" data-html-import-id="html-import-174" data-template-id="h2-153" style="font-family: &quot;Alfa Slab One&quot;; font-size: 51px;">EM LIVRARIAS AGORA</h2>
+      <p class="cta-text canva-text" data-html-import-id="html-import-175" data-template-id="p-154" style="color: rgb(255, 255, 255); font-weight: 700; font-size: 22px;">Garanta já o seu exemplar</p>
+      <div data-html-import-id="html-import-176">
+        <span class="cta-hashtag canva-text" data-html-import-id="html-import-177" data-template-id="span-155" style="background: rgb(255, 212, 59); color: rgb(16, 27, 61); font-family: &quot;Alfa Slab One&quot;; font-size: 29px;">#AsAventurasDeMike</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-note canva-footer" data-html-import-id="html-import-178" data-template-id="footer-156" style="color: rgb(203, 213, 225); font-size: 14px;">
+    Página oficial de divulgação em estilo quadrinhos. As Aventuras de Mike, Gabriel Dearo e Manu Digilio, Editora Planeta.
+  </footer>
+
+  <!-- SCRIPT INLINE (Página escondida e Lightbox) -->
+  <script data-html-import-id="html-import-179">
+    document.addEventListener('DOMContentLoaded', () => {
+      // Elements: Extra Crew Overlay
+      const openExtraBtn = document.getElementById('openExtraOverlay');
+      const closeExtraBtn = document.getElementById('closeExtraOverlay');
+      const extraOverlay = document.getElementById('extraOverlay');
+      const extraContent = document.getElementById('extraOverlayContent');
+
+      // Elements: Lightbox
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxWrapper = document.getElementById('lightboxWrapper');
+      const lightboxTargetImg = document.getElementById('lightboxTargetImg');
+      const closeLightboxBtn = document.getElementById('closeLightbox');
+
+      // Open Hidden Overlay
+      if (openExtraBtn && extraOverlay) {
+        openExtraBtn.addEventListener('click', () => {
+          extraOverlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      }
+
+      // Close Hidden Overlay via X
+      if (closeExtraBtn && extraOverlay) {
+        closeExtraBtn.addEventListener('click', () => {
+          extraOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+
+      // Close Hidden Overlay by clicking outside content
+      if (extraOverlay && extraContent) {
+        extraOverlay.addEventListener('click', (e) => {
+          if (!extraContent.contains(e.target) && e.target !== closeExtraBtn) {
+            extraOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+
+      // Lightbox open triggers
+      const triggers = document.querySelectorAll('.js-lightbox-trigger');
+      triggers.forEach(trigger => {
+        const handleTrigger = () => {
+          const img = trigger.querySelector('img');
+          if (img && img.src) {
+            lightboxTargetImg.src = img.src;
+            lightboxTargetImg.alt = img.alt || 'Imagem em tela cheia';
+            lightboxModal.classList.add('active');
+          }
+        };
+
+        trigger.addEventListener('click', handleTrigger);
+        trigger.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            handleTrigger();
+          }
+        });
+      });
+
+      // Close Lightbox
+      const hideLightbox = () => {
+        lightboxModal.classList.remove('active');
+        lightboxTargetImg.src = '';
+      };
+
+      if (closeLightboxBtn) {
+        closeLightboxBtn.addEventListener('click', hideLightbox);
+      }
+
+      if (lightboxModal && lightboxWrapper) {
+        lightboxModal.addEventListener('click', (e) => {
+          if (!lightboxWrapper.contains(e.target)) {
+            hideLightbox();
+          }
+        });
+      }
+
+      // Escape key handler for both modals
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          if (lightboxModal && lightboxModal.classList.contains('active')) {
+            hideLightbox();
+          } else if (extraOverlay && extraOverlay.classList.contains('active')) {
+            extraOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        }
+      });
+    });
+  </script>
+<script data-html-import-id="html-import-180">
+/* Skip artifact shell — fixed helpers served beside every artifact. */
+(function () {
+  "use strict";
+
+  var fmt = {
+    num: function (v, opts) { return new Intl.NumberFormat("pt-BR", opts || {}).format(v); },
+    brl: function (v) { return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(v); },
+    pct: function (v) { return new Intl.NumberFormat("pt-BR", { style: "percent", maximumFractionDigits: 1 }).format(v); }
+  };
+
+  // axisFmt keeps axis tick labels short (compact notation) so long values
+  // (e.g. full BRL amounts) never clip against the plot edge.
+  function axisFmt(v) {
+    return fmt.num(v, { notation: "compact", maximumFractionDigits: 1 });
+  }
+
+  // format accepts a function OR one of the fmt names ("num" | "brl" | "pct").
+  function coerceFormat(spec) {
+    if (typeof spec === "function") return spec;
+    if (typeof spec === "string" && fmt[spec]) return fmt[spec];
+    return function (v) { return fmt.num(v); };
+  }
+
+  function accent() {
+    return getComputedStyle(document.documentElement).getPropertyValue("--accent").trim() || "#2563eb";
+  }
+  function mutedColor() {
+    return getComputedStyle(document.documentElement).getPropertyValue("--text-muted").trim() || "#5b6472";
+  }
+  function svgEl(tag, attrs) {
+    var el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    return el;
+  }
+  function frame(el, w, h) {
+    var svg = svgEl("svg", { viewBox: "0 0 " + w + " " + h, role: "img" });
+    el.innerHTML = "";
+    el.appendChild(svg);
+    return svg;
+  }
+
+  // maxOf guards the axis scale: empty values would give -Infinity (truthy,
+  // so "|| 1" can't catch it) and a non-positive max would flip the chart.
+  function maxOf(values) {
+    var m = values.length ? Math.max.apply(null, values) : 0;
+    return m > 0 ? m : 1;
+  }
+
+  // bar(el, {labels:[], values:[], color?, format?}) — vertical bar chart.
+  function bar(el, cfg) {
+    var W = 640, H = 280, padL = 46, padB = 30, padT = 12;
+    var svg = frame(el, W, H);
+    var max = maxOf(cfg.values);
+    var n = cfg.values.length;
+    var plotW = W - padL - 12, plotH = H - padT - padB;
+    var step = plotW / n, bw = Math.min(step * 0.62, 64);
+    var color = cfg.color || accent();
+    var f = coerceFormat(cfg.format);
+    for (var g = 0; g <= 4; g++) {
+      var gy = padT + plotH - (plotH * g) / 4;
+      svg.appendChild(svgEl("line", { x1: padL, y1: gy, x2: W - 12, y2: gy, stroke: "currentColor", "stroke-opacity": 0.08 }));
+      var lbl = svgEl("text", { x: padL - 8, y: gy + 4, "text-anchor": "end", "font-size": 10, fill: mutedColor() });
+      lbl.textContent = axisFmt((max * g) / 4);
+      svg.appendChild(lbl);
+    }
+    cfg.values.forEach(function (v, i) {
+      var bh = Math.max(0, (v / max) * plotH);
+      var x = padL + i * step + (step - bw) / 2;
+      var y = padT + plotH - bh;
+      var r = svgEl("rect", { x: x, y: y, width: bw, height: bh, rx: 4, fill: color });
+      var t = svgEl("title", {});
+      t.textContent = cfg.labels[i] + ": " + f(v);
+      r.appendChild(t);
+      svg.appendChild(r);
+      var tx = svgEl("text", { x: x + bw / 2, y: H - 10, "text-anchor": "middle", "font-size": 11, fill: mutedColor() });
+      tx.textContent = cfg.labels[i];
+      svg.appendChild(tx);
+    });
+  }
+
+  // line(el, {labels:[], values:[], color?, format?}) — single-series line.
+  function line(el, cfg) {
+    var W = 640, H = 280, padL = 46, padB = 30, padT = 12;
+    var svg = frame(el, W, H);
+    var max = maxOf(cfg.values);
+    var n = cfg.values.length;
+    var plotW = W - padL - 16, plotH = H - padT - padB;
+    var color = cfg.color || accent();
+    var f = coerceFormat(cfg.format);
+    for (var g = 0; g <= 4; g++) {
+      var gy = padT + plotH - (plotH * g) / 4;
+      svg.appendChild(svgEl("line", { x1: padL, y1: gy, x2: W - 16, y2: gy, stroke: "currentColor", "stroke-opacity": 0.08 }));
+      var lbl = svgEl("text", { x: padL - 8, y: gy + 4, "text-anchor": "end", "font-size": 10, fill: mutedColor() });
+      lbl.textContent = axisFmt((max * g) / 4);
+      svg.appendChild(lbl);
+    }
+    var pts = cfg.values.map(function (v, i) {
+      var x = padL + (n === 1 ? plotW / 2 : (plotW * i) / (n - 1));
+      var y = padT + plotH - (v / max) * plotH;
+      return [x, y];
+    });
+    var d = pts.map(function (p, i) { return (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1); }).join(" ");
+    svg.appendChild(svgEl("path", { d: d, fill: "none", stroke: color, "stroke-width": 2, "stroke-linejoin": "round" }));
+    pts.forEach(function (p, i) {
+      var c = svgEl("circle", { cx: p[0], cy: p[1], r: 3.5, fill: color });
+      var t = svgEl("title", {});
+      t.textContent = cfg.labels[i] + ": " + f(cfg.values[i]);
+      c.appendChild(t);
+      svg.appendChild(c);
+      var tx = svgEl("text", { x: p[0], y: H - 10, "text-anchor": "middle", "font-size": 11, fill: mutedColor() });
+      tx.textContent = cfg.labels[i];
+      svg.appendChild(tx);
+    });
+  }
+
+  // donut(el, {labels:[], values:[], colors?}) — donut with center total.
+  function donut(el, cfg) {
+    var W = 320, H = 280, cx = W / 2, cy = H / 2, R = 92, r = 58;
+    var svg = frame(el, W, H);
+    var total = cfg.values.reduce(function (a, b) { return a + b; }, 0) || 1;
+    var palette = cfg.colors || [accent(), "#1baf7a", "#eda100", "#e34948", "#4a3aa7", "#e87ba4"];
+    var a0 = -Math.PI / 2;
+    cfg.values.forEach(function (v, i) {
+      var a1 = a0 + (v / total) * Math.PI * 2;
+      var large = a1 - a0 > Math.PI ? 1 : 0;
+      var p = ["M", cx + R * Math.cos(a0), cy + R * Math.sin(a0),
+        "A", R, R, 0, large, 1, cx + R * Math.cos(a1), cy + R * Math.sin(a1),
+        "L", cx + r * Math.cos(a1), cy + r * Math.sin(a1),
+        "A", r, r, 0, large, 0, cx + r * Math.cos(a0), cy + r * Math.sin(a0), "Z"].join(" ");
+      var path = svgEl("path", { d: p, fill: palette[i % palette.length] });
+      var t = svgEl("title", {});
+      t.textContent = cfg.labels[i] + ": " + fmt.num(v) + " (" + fmt.pct(v / total) + ")";
+      path.appendChild(t);
+      svg.appendChild(path);
+      a0 = a1;
+    });
+    var center = svgEl("text", { x: cx, y: cy + 5, "text-anchor": "middle", "font-size": 20, "font-weight": 650, fill: "currentColor" });
+    center.textContent = fmt.num(total);
+    svg.appendChild(center);
+  }
+
+  window.skipShell = { fmt: fmt };
+  window.skipChart = { bar: bar, line: line, donut: donut };
+})();
+
+</script>
+
+
+<script src="/_sdk/6e4b845d05dd79e4.editing_sdk.js" integrity="sha512-nfDAoBO2Sn6o6rLYgdnzgUs0nZfi4v1NV7M2ioocHZ6oj+ZnIEUmJGLGqFu2dnCue3Bjs5kWMae4qsFt05LfIA=="></script></body></html>
